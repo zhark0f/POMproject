@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import time
 
 def pytest_addoption(parser):
     parser.addoption('--language', action='store', default="ru",
@@ -18,6 +19,7 @@ def browser(request):
     browser = webdriver.Chrome(options=options)
     yield browser
     print("\nquit browser..")
+    time.sleep(5)
     browser.quit()
 
 
