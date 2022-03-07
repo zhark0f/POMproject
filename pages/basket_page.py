@@ -39,4 +39,5 @@ languages = {
     "sk": "Váš košík je prázdny",
     "uk": "Ваш кошик пустий.",
     "zh-cn": "Your basket is empty.",
+    "en-gb": "Your basket is empty."
 }
